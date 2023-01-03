@@ -21,6 +21,8 @@ fun guild(n: Int, fears: List<Int>): Int {
             group = mutableListOf(sortedFear[i])
         }
     }
+
+    //마지막 한 개 개수 확인
     if(group.size == group.max()){
         count ++
     }

@@ -4,6 +4,7 @@ fun pickBalls(n: Int,m:Int, balls: List<Int>): Int {
     var count = 0
     for(i in 0 until n-1){
         for(j in i until n){
+            //A와 B가 같지 않은 것만 추가
             if(balls[i] != balls[j])
                 count++
         }
