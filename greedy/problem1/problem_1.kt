@@ -1,16 +1,28 @@
 package greedy.problem1
 
 fun guild(n: Int, fears: List<Int>): Int {
+    //정렬
     val sortedFear = fears.sorted()
+
+    //그룹 만들기
     var group = mutableListOf(sortedFear[0])
     var count = 0
+
     for (i in 1 until n) {
-        if (group.size < group[0]) {
+
+        //그룹 크기가 더 적으면 추가
+        if (group.size < group.max()) {
             group.add(sortedFear[i])
-        } else {
+        }
+
+        //그렇지 않으면 그룹 개수 추가 및 초기화
+        else {
             count++
             group = mutableListOf(sortedFear[i])
         }
+    }
+    if(group.size == group.max()){
+        count ++
     }
     return count
 }
