@@ -1,4 +1,4 @@
-package implement.programmers60057
+package implement.problem9
 
 import kotlin.math.min
 

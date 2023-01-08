@@ -1,4 +1,4 @@
-package implement.lucky18406
+package implement.problem7
 
 fun main(){
     val input = readLine()

@@ -30,7 +30,7 @@ fun solution(food_times: IntArray, k: Long): Int {
 }
 
 fun main() {
-    val food_times = intArrayOf(3, 5, 1,6,5,3)
+    val food_times = intArrayOf(3, 5, 1, 6, 5, 3)
     val k = 20L
     val count = solution(food_times, k)
     println(count)
