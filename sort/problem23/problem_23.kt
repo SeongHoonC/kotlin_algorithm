@@ -17,7 +17,7 @@ fun main() {
     classRoom.sortWith(compareByDescending<Pair<String, List<Int>>> { it.second[0] }.thenBy { it.second[1] }
         .thenByDescending { it.second[2] }.thenBy { it.first })
 
-    repeat(n){
+    repeat(n) {
         println(classRoom[it].first)
     }
 }
